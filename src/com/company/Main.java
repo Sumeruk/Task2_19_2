@@ -2,50 +2,7 @@ package com.company;
 
 public class Main {
     public static void main(String[] args) throws Exception {
-        DoublyLinkedList<Integer> list = new DoublyLinkedList<>();
-        Logic logic = new Logic();
-
-        list.addLast(2);
-        list.addLast(3);
-        list.addLast(6);
-        list.addLast(6);
-        list.addLast(5);
-        list.addLast(1000);
-        list.addLast(7);
-
-
-        logic.changeList(list, 0);
-
-        for (int i = 0; i < list.size(); i++) {
-            System.out.print((i > 0 ? ", " : "") + list.get(i));
-        }
-        System.out.println();
-
-//        String inputFile = "C:\\Users\\12\\IdeaProjects\\Task2_19_2\\";
-//        String outputFile = inputFile;
-//        System.out.println("Введите название исходного файла");
-//        Scanner scan = new Scanner(System.in);
-//        String temp = scan.nextLine();
-//        if(!temp.contains(".txt")) {
-//            System.out.println("Файл не найден");
-//            throw new FileNotFoundException();
-//        } else {
-//            inputFile += temp.strip();
-//            temp = "";
-//        }
-//        System.out.println("Введите название файла, в который нужно вписать результат");
-//        temp = scan.nextLine();
-//        if(!temp.contains(".txt")) {
-//            System.out.println("Файл не найден");
-//            throw new FileNotFoundException();
-//        } else {
-//            outputFile += temp.strip();
-//        }
-//
-//        DoublyLinkedList<Integer> inlist;
-//        inlist = fileToDoublyLinkedList(inputFile);
-//        logic.changeList(inlist, 0);
-//        WorkWithFile.doublyLinkedListToFile(outputFile, inlist);
+        
         java.awt.EventQueue.invokeLater(() -> new FrameMain().setVisible(true));
 
 
